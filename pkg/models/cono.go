@@ -47,7 +47,6 @@ func NewCono() (*Cono, error) {
 }
 
 func (c Cono) Calcular() {
-	// Generatriz (slant height)
 	generatriz := math.Sqrt(float64(c.Radio)*float64(c.Radio) + float64(c.Altura)*float64(c.Altura))
 	areaBase := math.Pi * float64(c.Radio) * float64(c.Radio)
 	areaLateral := math.Pi * float64(c.Radio) * generatriz
